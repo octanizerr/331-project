@@ -13,7 +13,7 @@ Key Features:
 
 Technologies Used:
 -Front-end: HTML, CSS
--Back-end: Ruby
+-Back-end: Ruby on rails
 -Database: MySQL or PostgreSQL
 -Version Control: Git
 
