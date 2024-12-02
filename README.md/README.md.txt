@@ -8,9 +8,19 @@ Key Features:
 -Veterinarian Schedule Management: Veterinarians can view and manage their appointments.
 -Pet Profile Management: Store pet details such as vaccination history and medical records.
 -Notification System: Automatic reminders for upcoming appointments.
+-Book Appointments: Schedule vaccinations, check-ups, surgeries, etc.
+-View Health Records: Access their pets' medical history and treatment details.
 
 Technologies Used:
--Front-end: HTML, CSS, JavaScript
--Back-end: Python/Node.js/Java (choose the actual language you're using)
+-Front-end: HTML, CSS
+-Back-end: Ruby
 -Database: MySQL or PostgreSQL
 -Version Control: Git
+
+project members :
+-Omar Anouti 121200031
+-Kağan Uzuner 122200171 (leader )
+-Sinan Elmacı 120200043
+-Kemal Furkan Taşoğlu 121200104
+-Omar Haj Hussein  120200020
+
