@@ -11,11 +11,7 @@ Key Features:
 -Book Appointments: Schedule vaccinations, check-ups, surgeries, etc.
 -View Health Records: Access their pets' medical history and treatment details.
 
-Technologies Used:
--Front-end: HTML, CSS
--Back-end: Ruby on rails
--Database: MySQL or PostgreSQL
--Version Control: Git
+
 
 project members :
 -Omar Anouti 121200031
