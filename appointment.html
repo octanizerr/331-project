@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Log In</title>
+    <link rel="stylesheet" href="appointment.css"> <!-- CSS dosyanı ekle -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt=""> <!--website logo-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="logoname">PetCare</a>
+                </li>
+            </ul>
+            <div class="login-section">
+                <!--Log in will be dropdown menu to sign in as vet or owner-->
+                <ul>
+                    <li>
+                        <div class="dropdown"><button class="btn pulse">Log in</button>
+                            <div class="dropdown-content">
+                                <a href="ownerlogin.html">Log in as Owner</a>
+                                <a href="#">Log in as Vet</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="date">Randevu Tarihi:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Randevu Saati:</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="type">Randevu Tipi:</label>
+                <select id="type" required>
+                    <option value="muayene">Muayene</option>
+                    <option value="as">Aşı</option>
+                    <option value="ameliyat">Ameliyat</option>
+                </select>
+            </div>
+            <button type="submit">Randevuyu Al</button>
+        </form>
+    </div>
+    </body>
