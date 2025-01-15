@@ -137,6 +137,7 @@ ol, ul {
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 11;
   }
 
   .dropdown-content {
@@ -151,6 +152,7 @@ ol, ul {
     transition: all 0.3s;
     pointer-events: none;
     border-radius: 0.5rem;
+      z-index: 10;
   }
 
   .dropdown:hover .dropdown-content {
@@ -176,6 +178,7 @@ ol, ul {
     border-bottom: 2px solid black;;
     border-top: 2px solid black;
     background: linear-gradient(to right, #4A7D48, #D9A86C, #F3D6B8);
+    z-index: 1;
 }
 
 .banner .container {
