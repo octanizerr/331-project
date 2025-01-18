@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/logo.png" alt=""> <!--website logo-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="logoname">PetCare</a>
+                </li>
+            </ul>
+            <div class="login-section">
+                <!--Log in will be dropdown menu to sign in as vet or owner-->
+                <ul>
+                    <li>
+                        <div class="dropdown"><button class="btn pulse">Log in</button>
+                            <div class="dropdown-content">
+                                <a href="ownerlogin.html">Log in as Owner</a>
+                                <a href="#">Log in as Vet</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <img class="banner-image" src="images/banner1.jpg" alt="Banner Background">
+        <div class="container">
+            <div class="banner-box">
+                <h1>Your Pet’s Health, Just a Click Away!</h1>
+                <h2>Easily book appointments for check-ups, vaccinations, and surgeries,</h2>
+                <h2> while keeping your pet's health
+                    records accessible at all times, from anywhere.</h2>
+                <a href="#howitworks" class="button">Learn How it Works!</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="informations"> <!-- Features of website will be held here -->
+            <div class="features">
+                <div class="logoitem">
+                    <a href="#" class="effect">
+                        <img src="images/booking.png" alt="">
+                        <span class="title">Book Appointments</span>
+                        <span class="description">Easily schedule appointments for check-ups, vaccinations, and
+                            surgeries. No more waiting, just quick and efficient booking.</span>
+                    </a>
+                </div>
+                <div class="logoitem">
+                    <a href="#" class="effect">
+                        <img src="images/vaccination.png" alt="">
+                        <span class="title">Vaccinations</span>
+                        <span class="description">Keep your pet safe with timely vaccinations. Our system ensures all
+                            necessary vaccinations are up to date for your pet's health.</span>
+                    </a>
+                </div>
+                <div class="logoitem">
+                    <a href="#" class="effect">
+                        <img src="images/surgery.png" alt="">
+                        <span class="title">Surgery</span>
+                        <span class="description">Trust our expert veterinarians for all your pet's surgical needs. From
+                            routine procedures to complex surgeries, your pet is in good hands.</span>
+                    </a>
+                </div>
+                <div class="logoitem">
+                    <a href="#" class="effect">
+                        <img src="images/checkup.png" alt="">
+                        <span class="title">Check-up</span>
+                        <span class="description">Routine check-ups are crucial to maintaining your pet's health. Book
+                            regular visits to ensure your pet stays in peak condition.</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="howitworks" id="howitworks">
+        <h1>How PetCare Works?</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <span>Sign In as Owner
+                            </span>
+                            <i class="fa fa-right-to-bracket" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="content">
+
+                        <p>Users log in to the platform to manage their pets' health information and appointments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <span>Appointment Booking
+                            </span>
+                            <i class="fa fa-solid fa-calendar-check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+
+                    <div class="content">
+                        <p style="margin-bottom: 15px;">Users can schedule veterinary appointments for services like vaccinations or check-ups by selecting available dates and times.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <span>Health Records
+                            </span>
+                            <i class="fa fa-solid fa-notes-medical" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="content">
+                        <p>Users can track their pets' health history, including examination, vaccination, and medication records.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="slide slide1">
+                    <div class="content">
+                        <div class="icon">
+                            <span>Veterinarian View
+                            </span>
+                            <i class="fa fa-solid fa-stethoscope" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="content">
+                        <p>Veterinarians can manage appointment requests and access animals' health information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <!-- About Us Section -->
+                <div class="footer-about">
+                    <h3>About PetCare</h3>
+                    <p>PetCare is your go-to platform for managing your pets' health, appointments, and records
+                        effortlessly. We care for your pets as much as you do!</p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#howitworks">How It Works</a></li>
+                        <li><a href="ownerlogin.html">Log in as Owner</a></li>
+                        <li><a href="#">Log in as Vet</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa fa-envelope"></i> support@petcare.com</li>
+                        <li><i class="fa fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fa fa-map-marker-alt"></i> 123 PetCare St, Animal City, PA 45678</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 PetCare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

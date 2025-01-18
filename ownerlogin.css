@@ -1,0 +1,297 @@
+/* Genel Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Temalar */
+:root {
+    --primary-color: #A8D5BA; /* Açık Yeşil */
+    --secondary-color: #8AC6B3; /* Mint Tonu */
+    --background-color: #F8F9FA; /* Hafif Gri */
+}
+
+body {
+    line-height: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased; /* Okunabilirlik artırma */
+    background: var(--background-color);
+}
+body, html {
+    overflow-x: hidden;  /* Yatay kaydırma çubuğunu gizler */
+    width: 100%;         /* Sayfanın genişliği %100 olmalı */
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto; /* Merkezleme */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.header .container img {
+    height: 100px;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    margin: 40px 10px 0 -20px;
+}
+
+.header .container .logoname {
+    font-size: 45px;
+    font-weight: 500;
+    position: relative;
+    top: -73px;
+    right: -80px;
+    color: rgb(255, 255, 255, 0.9);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header .login-section ul {
+    display: flex;
+}
+
+.header .login-section ul li {
+    margin-left: 10px;
+    background: #31855b;
+    margin: 7px;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 0 15px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header .login-section ul li a {
+    height: 34px;
+    display: block;
+    line-height: 34px;
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.header .login-section .dropdown button {
+    height: 34px;
+    display: block;
+    line-height: 34px;
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 0 15px;
+    background: #31855b;
+}
+
+.header .login-section ul li button {
+    height: 34px;
+    display: block;
+    line-height: 34px;
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 0 15px;
+    background: #31855b;
+}
+
+.header .login-section ul li a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+/* Dropdown Menü */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    background: var(--secondary-color);
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    pointer-events: none;
+    border-radius: 0.5rem;
+    z-index: 20;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    margin-left: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+    color: #2D6A4F;
+}
+
+.dropdown-content a:hover {
+    transform: scale(1.08);
+}
+
+/* Arka Plan */
+.background {
+    background-position: center top; /* Bu, resmin üst kısmını gösterecek */
+    background-size: 100% 80%; /* Arka planı ekran boyutuna göre ölçekler */
+    position: absolute;
+    width: 100%;
+    height: 88vh; /* Ekran boyutunda genişlik */
+    overflow: hidden;
+    z-index: 1; /* Arka planda kalacak */
+    
+}
+
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görseli tam ekran yapar */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Sign Up Container */
+.signup-container {
+    width: 500px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    z-index: 2; /* Form ön planda olacak */
+    opacity: 0.95;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Box shadow ekledik */
+}
+
+.signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: green;
+    font-weight: 500;
+}
+.signup-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.signup-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button_slide {
+    margin-top: 20px;
+    color: black;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    padding: 18px 36px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.4s ease-out; /* Renk değişimini geçişle yapar */
+    overflow: hidden; /* İçeriğin taşmasını engeller */
+}
+
+.button_slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Başlangıçta kutu tamamen sağa kayar */
+    width: 100%;
+    height: 100%;
+    background-color: #45a049; /* Yeşil renk */
+    transition: all 0.4s ease-out; /* Renginin kayması için geçiş efekti */
+    z-index: 0; /* Arka planda kalmasını sağlar */
+}
+
+.button_slide:hover::after {
+    left: 0; /* Hover durumunda kutu yeşil rengin tamamını dolduracak şekilde kayacak */
+}
+
+.button_slide:hover {
+    color: white; /* Hover durumunda yazı rengi beyaz olacak */
+    border-color: #45a049; /* Butonun kenar çizgisinin rengini de değiştirelim */
+}
+
+.button_slide span {
+    position: relative; /* Yazıyı üstte tutmak için */
+    z-index: 1; /* Yazının her durumda üstte olmasını sağlar */
+}
+
+
+
+.signup-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-container a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}

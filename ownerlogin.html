@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Log In</title>
+    <link rel="stylesheet" href="ownerlogin.css"> <!-- CSS dosyanı ekle -->
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt=""> <!--website logo-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="logoname">PetCare</a>
+                </li>
+            </ul>
+            <div class="login-section">
+                <!--Log in will be dropdown menu to sign in as vet or owner-->
+                <ul>
+                    <li>
+                        <div class="dropdown"><button class="btn pulse">Log in</button>
+                            <div class="dropdown-content">
+                                <a href="ownerlogin.html">Log in as Owner</a>
+                                <a href="#">Log in as Vet</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="background">
+        <img src="images/8379740.jpg" alt="">
+    </div>
+
+    <div class="signup-container">
+        <h1>Pet Owner Log In</h1>
+        <h2>Log into your account to access your pets' health information and manage appointments!</h2>
+        <form action="/submit_signup" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="button_slide slide_right">
+                <span><a href="ownerprofile.html">Log in</a></span>
+            </div>
+        </form>
+        <p>Haven't you created a account? Click to <a href="signup.html">Sign up</a>!</p>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
